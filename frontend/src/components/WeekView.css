@@ -1,0 +1,46 @@
+.week-card {
+    padding: 24px 20px;
+}
+
+.week-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.day-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F6FA;
+    color: #8E8E93;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.day-circle.active {
+    background-color: transparent;
+    color: var(--color-text-main);
+    border: 1px solid var(--color-text-main);
+}
+
+.pill-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pill-icon {
+    font-size: 16px;
+    color: var(--color-primary);
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+.status-text {
+    color: #8E8E93;
+    font-size: 14px;
+}

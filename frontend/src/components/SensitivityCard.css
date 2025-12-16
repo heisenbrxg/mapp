@@ -1,0 +1,57 @@
+.sensitivity-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+}
+
+.sensitivity-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cloud-icon-wrapper {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.cloud-emoji {
+    z-index: 1;
+    color: #7B61FF;
+    /* Fallback if emoji doesn't render color */
+    text-shadow: 0 4px 10px rgba(123, 97, 255, 0.3);
+}
+
+.sparkles {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    font-size: 16px;
+}
+
+.text-content .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 2px;
+}
+
+.text-content .subtitle {
+    font-size: 14px;
+    color: #C4C4C4;
+}
+
+.lock-icon-wrapper {
+    background: #F5F6FA;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+.pain-free-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.pain-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.big-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-text-main);
+    line-height: 1;
+}
+
+.text-content .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 4px;
+}
+
+.text-content .subtitle {
+    font-size: 14px;
+    color: #C4C4C4;
+}
