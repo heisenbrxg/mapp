@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #FF5B7E;
+  --color-primary: #0066FF;
   --color-bg: #F8F9FD;
   --color-card: #FFFFFF;
   --color-text-main: #1C1C1E;
@@ -37,11 +37,13 @@ button {
 
 /* Utilities */
 .container {
-  max-width: 480px; /* Mobile width */
+  max-width: 480px;
+  /* Mobile width */
   margin: 0 auto;
   min-height: 100vh;
   background-color: var(--color-bg);
-  padding: 0 0 80px 0; /* Space for bottom nav */
+  padding: 0 0 80px 0;
+  /* Space for bottom nav */
   position: relative;
 }
 

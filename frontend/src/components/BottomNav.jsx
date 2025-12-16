@@ -2,13 +2,19 @@ import React from 'react';
 import { LayoutGrid, Calendar, BarChart2, User } from 'lucide-react';
 import './BottomNav.css';
 
-const BottomNav = ({ onFabClick }) => {
+const BottomNav = ({ onFabClick, activeTab, onTabChange }) => {
   return (
     <div className="bottom-nav">
-      <button className="nav-item active">
+      <button
+        className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`}
+        onClick={() => onTabChange && onTabChange('dashboard')}
+      >
         <LayoutGrid size={24} />
       </button>
-      <button className="nav-item">
+      <button
+        className={`nav-item ${activeTab === 'calendar' ? 'active' : ''}`}
+        onClick={() => onTabChange && onTabChange('calendar')}
+      >
         <Calendar size={24} />
       </button>
 

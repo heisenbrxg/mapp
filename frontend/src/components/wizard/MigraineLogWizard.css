@@ -144,8 +144,8 @@
 
 .severity-btn.selected {
     border-color: var(--color-primary);
-    background: #FFF0F3;
-    /* Light pink bg */
+    background: #E5F0FF;
+    /* Light Blue bg */
     color: var(--color-primary);
 }
 
@@ -168,7 +168,7 @@
 
 .checkbox-item.selected {
     border-color: var(--color-primary);
-    background: #FFF0F3;
+    background: #E5F0FF;
 }
 
 .checkbox-item input {

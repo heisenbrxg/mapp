@@ -4,14 +4,14 @@ import './MonthlyStats.css';
 
 const MonthlyStats = () => {
     const data = [
-        { name: 'Severe', value: 3, color: '#FF5B7E' }, // The pink segment
+        { name: 'Severe', value: 3, color: '#00297A' }, // Deep Navy
         { name: 'Remaining', value: 25, color: '#F0F1F6' }, // The light grey part
     ];
 
     const legendData = [
-        { label: 'Severe', count: 0, color: '#FF5B7E' },
-        { label: 'Moderate', count: 1, color: '#FF97B5' },
-        { label: 'Mild', count: 0, color: '#FFCFDE' },
+        { label: 'Severe', count: 0, color: '#00297A' },
+        { label: 'Moderate', count: 1, color: '#0066FF' },
+        { label: 'Mild', count: 0, color: '#60AFFF' },
     ];
 
     return (
