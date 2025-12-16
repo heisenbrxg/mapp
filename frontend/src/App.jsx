@@ -5,12 +5,13 @@ import MigraineLogWizard from './components/wizard/MigraineLogWizard';
 import CalendarView from './components/CalendarView';
 import AnalyticsView from './components/analytics/AnalyticsView.jsx';
 import Login from './components/Login';
+import ProfileSettings from './components/ProfileSettings';
 import { useAuth } from './context/AuthContext';
 
 function App() {
   const { user } = useAuth();
   const [showWizard, setShowWizard] = useState(false);
-  const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard', 'calendar', 'analytics'
+  const [currentView, setCurrentView] = useState('dashboard'); // 'dashboard', 'calendar', 'analytics', 'profile'
 
   if (!user) {
     return <Login />;
@@ -36,10 +37,11 @@ function App() {
         </header>
       )}
 
-      <main style={{ padding: '0 24px', paddingBottom: '100px' }}>
+      <main style={{ padding: '0 24px', paddingBottom: '100px', minHeight: '80vh' }}>
         {currentView === 'dashboard' && <Dashboard />}
         {currentView === 'calendar' && <CalendarView />}
         {currentView === 'analytics' && <AnalyticsView />}
+        {currentView === 'profile' && <ProfileSettings onBack={() => setCurrentView('dashboard')} />}
       </main>
 
       <BottomNav
